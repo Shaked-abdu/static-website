@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const app = express();
+const https = require('https');
 
 // Serve static files from the 'dist' directory
 app.use(express.static('/home/st111/web/frontend/front/dist'));
