@@ -13,7 +13,7 @@ app.get('*', (req, res) => {
 
 // Start the server
 const options2 = {
-    key: fs.readFileSync('../../vite-key.pem'),
-    cert: fs.readFileSync('../../vite-cert.pem')
+    key: fs.readFileSync('../vite-key.pem'),
+    cert: fs.readFileSync('../vite-cert.pem')
 };
 https.createServer(options2, app).listen(process.env.PORT);
